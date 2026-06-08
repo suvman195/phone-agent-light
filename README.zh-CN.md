@@ -35,6 +35,8 @@ npm start
 
 手机打开 `Phone display page` 后，如果能看到状态屏，基础安装就完成了。
 
+如果你看完还是觉得不会用，可以试着把这个仓库丢给你的 AI coding agent，让它帮你自动部署浏览器模式。
+
 ## 检查环境
 
 ```bash

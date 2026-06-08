@@ -30,6 +30,8 @@ npm start
 
 Both devices must be on the same Wi-Fi. If the phone page opens and shows the dashboard, the basic installation is done.
 
+If the setup still feels confusing after reading this guide, try handing this repository to your AI coding agent and ask it to deploy the browser mode for you.
+
 Optional fullscreen APK:
 
 ```bash
