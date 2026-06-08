@@ -1,0 +1,34 @@
+:root {
+  color-scheme: light;
+  --paper: #f6f6f1;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+body {
+  display: block;
+  position: fixed;
+  inset: 0;
+}
+
+.focus-svg {
+  display: block;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--paper);
+}

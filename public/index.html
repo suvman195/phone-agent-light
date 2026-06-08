@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Phone Agent Light Console</title>
+    <link rel="stylesheet" href="/styles.css?v=2">
+  </head>
+  <body>
+    <main class="console-shell">
+      <section class="console-band status-band">
+        <div class="status-panel">
+          <div class="status-topline">
+            <span class="status-tone" id="statusTone">待机</span>
+            <span class="status-updated" id="updatedAt">--</span>
+          </div>
+
+          <div class="status-core">
+            <div class="status-ring" id="statusRing">
+              <div class="status-ring-inner">
+                <span class="status-label" id="statusLabel">待机</span>
+              </div>
+            </div>
+
+            <p class="status-detail" id="statusDetail">等待你的下一步指令。</p>
+          </div>
+
+          <div class="token-panel">
+            <div class="token-header">
+              <span>Token</span>
+              <span id="tokenValue">100%</span>
+            </div>
+            <div class="token-track" aria-hidden="true">
+              <div class="token-fill" id="tokenFill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="routes-panel">
+          <div class="panel-head">
+            <h2>设备入口</h2>
+            <span class="panel-note" id="providerBadge">Mock</span>
+          </div>
+
+          <div class="binding-panel">
+            <label class="binding-label" for="bindingSelect">绑定目标</label>
+            <div class="binding-controls">
+              <select id="bindingSelect"></select>
+              <button class="ghost-button" id="applyBinding" type="button">切换</button>
+            </div>
+            <p class="binding-hint" id="bindingHint">正在读取可绑定的 agent…</p>
+          </div>
+
+          <div class="route-list" id="routeList">
+            <div class="route-item">正在读取本机地址…</div>
+          </div>
+        </div>
+
+        <div class="quick-panel">
+          <button data-command="THINKING">思考</button>
+          <button data-command="WRITING">写入</button>
+          <button data-command="RUNNING">运行</button>
+          <button data-command="DONE">完成</button>
+          <button data-command="ERROR">异常</button>
+          <button data-command="NEED_CONFIRM">确认</button>
+          <button data-command="IDLE">待机</button>
+          <button data-command="TOKEN:25">Token 25%</button>
+        </div>
+      </section>
+
+      <section class="console-band chat-band">
+        <div class="chat-panel">
+          <div class="panel-head">
+            <h2>Mac 控制台</h2>
+            <div class="head-actions">
+              <button class="ghost-button" id="refreshConversation" type="button">刷新</button>
+              <button class="ghost-button" id="resetConversation" type="button">清空会话</button>
+            </div>
+          </div>
+
+          <div class="chat-log" id="chatLog">
+            <div class="message-row assistant">
+              <div class="message-role">assistant</div>
+              <div class="message-body">控制台已就绪。你可以直接在这里发问，手机只负责显示状态。</div>
+            </div>
+          </div>
+
+          <form class="composer" id="chatForm">
+            <label class="composer-label" for="chatInput">发送给 AI</label>
+            <textarea
+              id="chatInput"
+              name="prompt"
+              rows="5"
+              maxlength="4000"
+              placeholder="例如：帮我规划这台墨水屏手机作为桌面 AI 终端的完整软件架构。"
+            ></textarea>
+            <div class="composer-actions">
+              <p class="composer-hint" id="composerHint">未配置 API Key 时会进入 mock 演示模式。</p>
+              <button class="send-button" id="sendButton" type="submit">发送</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js?v=2"></script>
+  </body>
+</html>

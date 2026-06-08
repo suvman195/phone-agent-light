@@ -1,0 +1,15 @@
+{
+  "name": "phone-agent-light",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "description": "Phone-friendly Agent status terminal inspired by AgentCore-Light",
+  "scripts": {
+    "setup": "bash scripts/setup-mac.sh",
+    "doctor": "bash scripts/doctor.sh",
+    "start": "node server.js",
+    "send": "node scripts/send-status.js",
+    "chat": "node scripts/chat.js",
+    "android:build": "bash scripts/build-android-shell.sh"
+  }
+}

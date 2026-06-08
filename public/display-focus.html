@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Agent Focus Display</title>
+    <link rel="stylesheet" href="/display-focus.css?v=8">
+  </head>
+  <body>
+    <div class="focus-stage">
+      <main class="focus-shell" id="focusShell">
+        <header class="focus-header">
+          <span class="focus-badge" id="displayConnection">LIVE</span>
+          <span class="focus-model" id="displayModel">MODEL</span>
+          <span class="focus-time" id="displayTime">--:--:--</span>
+        </header>
+
+        <section class="focus-status">
+          <div class="focus-line">
+            <p class="focus-tone" id="displayTone">READY</p>
+          </div>
+          <div class="focus-line">
+            <h1 class="focus-title" id="displayStatus">IDLE</h1>
+          </div>
+        </section>
+
+        <section class="focus-token">
+          <div class="focus-token-head">
+            <span>TOKEN</span>
+            <span id="displayTokenValue">100%</span>
+          </div>
+          <div class="focus-token-track" aria-hidden="true">
+            <div class="focus-token-fill" id="displayTokenFill"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/display-focus.js?v=8"></script>
+  </body>
+  </html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Agent Display</title>
+    <link rel="stylesheet" href="/display.css?v=5">
+  </head>
+  <body>
+    <main class="display-shell">
+      <header class="display-header">
+        <span class="display-badge" id="displayConnection">LIVE</span>
+        <span class="display-model" id="displayModel">MODEL</span>
+        <span class="display-time" id="displayTime">--:--:--</span>
+      </header>
+
+      <section class="display-status">
+        <p class="display-kicker" id="displayTone">READY</p>
+        <h1 class="display-title" id="displayStatus">IDLE</h1>
+        <p class="display-detail" id="displayDetail">Waiting for your next move.</p>
+      </section>
+
+      <section class="display-token">
+        <div class="display-token-head">
+          <span>TOKEN</span>
+          <span id="displayTokenValue">100%</span>
+        </div>
+        <div class="display-token-track" aria-hidden="true">
+          <div class="display-token-fill" id="displayTokenFill"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/display.js?v=5"></script>
+  </body>
+  </html>

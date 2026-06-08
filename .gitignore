@@ -1,0 +1,43 @@
+# Dependencies and local environment
+node_modules/
+.env
+.env.*
+!.env.example
+
+# macOS and editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Android SDK/toolchain caches. Install these locally, never commit them.
+.android-sdk/
+.android-build-cache/
+
+# Android build outputs and signing material
+android-shell/build/
+android-shell/dist/
+android-shell/*.keystore
+android-shell/*.jks
+android-shell/*.idsig
+
+# Runtime logs, local sessions, and databases
+*.log
+*.jsonl
+*.sqlite
+*.sqlite3
+*.db
+
+# Local device dumps and private troubleshooting screenshots
+window_dump*.xml
+current_phone*.png
+*_phone*.png
+saved_networks.png
+wifi.png
+
+# Generated demo captures; keep curated public screenshots under docs/ instead.
+agent_display*.png
+browser_display.png
+current_view.png
+focus_landscape_right.png
+focus_view*.png
+landscape_test.png

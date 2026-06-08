@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Agent Focus Landscape Display</title>
+    <link rel="stylesheet" href="/display-landscape.css?v=13">
+  </head>
+  <body>
+    <svg
+      id="focusSvg"
+      class="focus-svg"
+      viewBox="0 0 720 1280"
+      width="720"
+      height="1280"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Agent focus display"
+      role="img"
+    >
+      <rect x="0" y="0" width="720" height="1280" fill="#f6f6f1"></rect>
+
+      <g id="landscapeCanvas" transform="translate(0 1280) rotate(-90)">
+        <rect x="24" y="24" width="1232" height="672" rx="0" ry="0" fill="none" stroke="#181818" stroke-width="4"></rect>
+
+        <text id="displayConnection" x="64" y="84" font-size="34" font-weight="700" fill="#111111">LIVE</text>
+        <text id="displayModel" x="640" y="84" font-size="28" font-weight="500" text-anchor="middle" fill="#4c4c4c">MODEL</text>
+
+        <g id="displayBatteryGroup" transform="translate(948 46)">
+          <text id="displayBatteryValue" x="0" y="32" font-size="30" font-weight="700" text-anchor="end" fill="#111111">--%</text>
+          <text id="displayBatteryMeta" x="0" y="56" font-size="16" font-weight="600" text-anchor="end" fill="#6a6a6a">BATTERY</text>
+          <rect id="displayBatteryOutline" x="20" y="8" width="72" height="32" fill="none" stroke="#181818" stroke-width="3"></rect>
+          <rect x="92" y="17" width="8" height="14" fill="#181818"></rect>
+          <rect id="displayBatteryFill" x="24" y="12" width="64" height="24" fill="#181818"></rect>
+          <path id="displayBatteryBolt" d="M 55 14 L 45 27 H 54 L 49 38 L 69 22 H 58 L 63 14 Z" fill="#f6f6f1" display="none"></path>
+        </g>
+
+        <text id="displayTime" x="1216" y="84" font-size="34" font-weight="500" text-anchor="end" fill="#484848">--:--:--</text>
+
+        <g id="displayElapsedGroup" transform="translate(1220 182)">
+          <text id="displayElapsedLabelTop" x="0" y="0" font-size="18" font-weight="700" text-anchor="end" fill="#6a6a6a">ACTIVE</text>
+          <text id="displayElapsedLabelBottom" x="0" y="22" font-size="18" font-weight="700" text-anchor="end" fill="#6a6a6a">TIME</text>
+          <text id="displayElapsedHours" x="0" y="88" font-size="54" font-weight="800" text-anchor="end" fill="#111111">00H</text>
+          <text id="displayElapsedMinutes" x="0" y="142" font-size="54" font-weight="800" text-anchor="end" fill="#111111">00M</text>
+          <text id="displayElapsedSeconds" x="0" y="196" font-size="54" font-weight="800" text-anchor="end" fill="#111111">00S</text>
+        </g>
+
+        <g id="displayMainGroup" transform="translate(0 -40)">
+          <line x1="452" y1="146" x2="452" y2="488" stroke="#181818" stroke-width="3"></line>
+
+          <g id="displayGlyph" transform="translate(236 322)">
+            <circle id="glyphOuterRing" cx="0" cy="0" r="132" fill="none" stroke="#181818" stroke-width="6"></circle>
+            <circle id="glyphInnerRing" cx="0" cy="0" r="88" fill="none" stroke="#7c7c7c" stroke-width="4"></circle>
+            <circle id="glyphIdlePulse" cx="0" cy="0" r="30" fill="#181818"></circle>
+            <circle id="glyphCenter" cx="0" cy="0" r="12" fill="#181818"></circle>
+
+            <g id="glyphOrbitDots">
+              <circle id="glyphDot1" cx="0" cy="-88" r="9" fill="#181818"></circle>
+              <circle id="glyphDot2" cx="88" cy="0" r="9" fill="#181818"></circle>
+              <circle id="glyphDot3" cx="0" cy="88" r="9" fill="#181818"></circle>
+              <circle id="glyphDot4" cx="-88" cy="0" r="9" fill="#181818"></circle>
+            </g>
+
+            <g id="glyphWritingGroup">
+              <line id="glyphWriteLine1" x1="-62" y1="-34" x2="50" y2="-34" stroke="#181818" stroke-width="9" stroke-linecap="round"></line>
+              <line id="glyphWriteLine2" x1="-62" y1="0" x2="62" y2="0" stroke="#181818" stroke-width="9" stroke-linecap="round"></line>
+              <line id="glyphWriteLine3" x1="-62" y1="34" x2="34" y2="34" stroke="#181818" stroke-width="9" stroke-linecap="round"></line>
+              <rect id="glyphWriteCursor" x="46" y="-46" width="14" height="24" fill="#181818"></rect>
+            </g>
+
+            <g id="glyphRunGroup">
+              <line x1="0" y1="-106" x2="0" y2="-70" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="75" y1="-75" x2="50" y2="-50" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="106" y1="0" x2="70" y2="0" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="75" y1="75" x2="50" y2="50" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="0" y1="106" x2="0" y2="70" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="-75" y1="75" x2="-50" y2="50" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="-106" y1="0" x2="-70" y2="0" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+              <line x1="-75" y1="-75" x2="-50" y2="-50" stroke="#181818" stroke-width="10" stroke-linecap="round"></line>
+            </g>
+
+            <path id="glyphCheck" d="M -62 8 L -18 54 L 70 -50" fill="none" stroke="#181818" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path>
+
+            <g id="glyphErrorGroup">
+              <line id="glyphErrorLine" x1="0" y1="-72" x2="0" y2="26" stroke="#181818" stroke-width="18" stroke-linecap="round"></line>
+              <circle id="glyphErrorDot" cx="0" cy="72" r="12" fill="#181818"></circle>
+            </g>
+
+            <g id="glyphConfirmGroup">
+              <path id="glyphQuestion" d="M -26 -56 C -26 -86, 34 -86, 34 -42 C 34 -6, 0 -6, 0 28" fill="none" stroke="#181818" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle id="glyphQuestionDot" cx="0" cy="78" r="12" fill="#181818"></circle>
+            </g>
+          </g>
+
+          <text id="displayTone" x="826" y="238" font-size="116" font-weight="600" text-anchor="middle" fill="#202020">Ready</text>
+          <text id="displayStatus" x="826" y="408" font-size="244" font-weight="800" text-anchor="middle" fill="#111111">待机</text>
+          <text id="displayDetail" x="826" y="492" font-size="42" font-weight="500" text-anchor="middle" fill="#4c4c4c">Waiting for your next...</text>
+
+          <rect x="64" y="512" width="548" height="118" fill="none" stroke="#181818" stroke-width="3"></rect>
+          <rect x="668" y="512" width="548" height="118" fill="none" stroke="#181818" stroke-width="3"></rect>
+
+          <text x="96" y="550" font-size="28" font-weight="700" fill="#4c4c4c">CPU</text>
+          <path id="displayCpuChart" d="" fill="none" stroke="#181818" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <text id="displayCpuValue" x="96" y="598" font-size="56" font-weight="800" fill="#111111">0%</text>
+          <text id="displayCpuSub" x="96" y="622" font-size="20" font-weight="500" fill="#4c4c4c">实时占用</text>
+
+          <text x="700" y="550" font-size="28" font-weight="700" fill="#4c4c4c">MEMORY</text>
+          <path id="displayMemoryChart" d="" fill="none" stroke="#181818" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <text id="displayMemoryValue" x="700" y="598" font-size="56" font-weight="800" fill="#111111">0 GB</text>
+          <text id="displayMemorySub" x="700" y="622" font-size="20" font-weight="500" fill="#4c4c4c">0% · 总 0 GB</text>
+
+          <text x="64" y="678" font-size="34" font-weight="600" fill="#4c4c4c">TOKEN</text>
+          <text id="displayTokenValue" x="1216" y="678" font-size="34" font-weight="700" text-anchor="end" fill="#111111">100%</text>
+          <rect x="64" y="696" width="1152" height="26" fill="#ffffff" stroke="#181818" stroke-width="4"></rect>
+          <rect id="displayTokenFill" x="68" y="700" width="1144" height="18" fill="#181818"></rect>
+        </g>
+      </g>
+    </svg>
+
+    <script src="/display-landscape.js?v=14"></script>
+  </body>
+</html>
