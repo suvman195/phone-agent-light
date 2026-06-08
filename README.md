@@ -4,9 +4,17 @@ Turn an old Android phone into a lightweight always-on status display for local 
 
 ## Screenshots
 
-| Phone display | Portrait display | Control panel |
-| --- | --- | --- |
-| ![Phone Agent Light running on an Android phone](docs/product-display.jpg) | ![Phone Agent Light portrait display](docs/product-display-2.jpg) | ![Phone Agent Light control panel](docs/control-panel.png) |
+### Phone display
+
+![Phone Agent Light running on an Android phone](docs/product-display.jpg)
+
+### Portrait display
+
+![Phone Agent Light portrait display](docs/product-display-2.jpg)
+
+### Control panel
+
+![Phone Agent Light control panel](docs/control-panel.png)
 
 中文安装指南: [README.zh-CN.md](README.zh-CN.md)
 
@@ -17,7 +25,7 @@ Phone Agent Light runs a small Node.js server on your computer, serves a phone-f
 The fastest path is browser mode. Build the Android APK only after the web page works.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/suvman195/phone-agent-light.git
 cd phone-agent-light
 npm run setup
 npm start

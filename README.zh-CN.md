@@ -4,9 +4,17 @@
 
 ## 截图
 
-| 手机横屏显示 | 手机竖屏显示 | 后台控制面板 |
-| --- | --- | --- |
-| ![手机横屏显示](docs/product-display.jpg) | ![手机竖屏显示](docs/product-display-2.jpg) | ![后台控制面板](docs/control-panel.png) |
+### 手机横屏显示
+
+![手机横屏显示](docs/product-display.jpg)
+
+### 手机竖屏显示
+
+![手机竖屏显示](docs/product-display-2.jpg)
+
+### 后台控制面板
+
+![后台控制面板](docs/control-panel.png)
 
 ## 适合谁
 
@@ -22,7 +30,7 @@
 ## 最快安装方式
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/suvman195/phone-agent-light.git
 cd phone-agent-light
 npm run setup
 npm start
