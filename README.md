@@ -2,6 +2,12 @@
 
 Turn an old Android phone into a lightweight always-on status display for local AI agents.
 
+## Screenshots
+
+| Phone display | Portrait display | Control panel |
+| --- | --- | --- |
+| ![Phone Agent Light running on an Android phone](docs/product-display.jpg) | ![Phone Agent Light portrait display](docs/product-display-2.jpg) | ![Phone Agent Light control panel](docs/control-panel.png) |
+
 中文安装指南: [README.zh-CN.md](README.zh-CN.md)
 
 Phone Agent Light runs a small Node.js server on your computer, serves a phone-friendly status page, and can optionally proxy a simple OpenAI-compatible chat flow. The phone only needs to open a web page, or you can install the included minimal Android WebView shell for a fullscreen experience.

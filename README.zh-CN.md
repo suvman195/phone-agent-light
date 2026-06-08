@@ -2,6 +2,12 @@
 
 把一台旧安卓手机变成本地 AI Agent 状态屏。Mac 负责运行服务，安卓手机只负责打开显示页。
 
+## 截图
+
+| 手机横屏显示 | 手机竖屏显示 | 后台控制面板 |
+| --- | --- | --- |
+| ![手机横屏显示](docs/product-display.jpg) | ![手机竖屏显示](docs/product-display-2.jpg) | ![后台控制面板](docs/control-panel.png) |
+
 ## 适合谁
 
 你需要：
